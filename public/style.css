@@ -15,6 +15,26 @@
   --title-color: #09c909;
 }
 
+
+/* TEMAS */
+.theme-blue {
+  --bg-gradient-start: #00c6ff;
+  --bg-gradient-end: #0072ff;
+  --button-bg: #0072ff;
+  --button-hover: #005be0;
+  --input-border: #00c6ff;
+  --title-color: #0072ff;
+}
+
+.theme-red {
+  --bg-gradient-start: #ff4b2b;
+  --bg-gradient-end: #ff416c;
+  --button-bg: #ff4b2b;
+  --button-hover: #d83a1f;
+  --input-border: #ff4b2b;
+  --title-color: #ff4b2b;
+}
+
 /* RESET */
 * {
   margin: 0;
