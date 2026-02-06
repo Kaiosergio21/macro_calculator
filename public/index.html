@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Macronutrientes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+
+  <div class="top-bar">
+  <p class="disclaimer">
+    ⚠️ Este aplicativo é apenas informativo e não substitui a orientação de um nutricionista.
+  </p>
+
+ <div class="social-links">
+  <a href="https://github.com/SEU_USUARIO" target="_blank" title="GitHub">
+    <i class="fa-brands fa-github"></i>
+  </a>
+
+  <a href="https://www.linkedin.com/in/SEU_PERFIL" target="_blank" title="LinkedIn">
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
+</div>
+
+  </div>
+</div>
+
+<div class="container">
+  <h1 class="title">🥗 Calculadora de Macronutrientes</h1>
+
+  <!-- WRAPPER FLEX -->
+  <div class="content">
+
+    <form id="macroForm" class="form-area">
+      <div class="grid">
+        <input type="number" placeholder="Peso (kg)" id="peso" required>
+        <input type="number" placeholder="Altura (cm)" id="altura" step="0.01" required>
+        <input type="number" placeholder="Idade" id="idade" required>
+
+        <select id="sexo">
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+        </select>
+
+        <select id="atividade">
+          <option value="sedentaria">Sedentário</option>
+          <option value="leve">Leve (1-3x/sem)</option>
+          <option value="moderada">Moderada (3-5x/sem)</option>
+          <option value="intensa">Intensa (6-7x/sem)</option>
+        </select>
+
+        <select id="objetivo">
+          <option value="emagrecimento">Emagrecimento</option>
+          <option value="manutencao">Manutenção</option>
+          <option value="hipertrofia">Hipertrofia</option>
+        </select>
+
+      
+
+        <input type="number" placeholder="Nº de refeições" id="refeicoes" required>
+      </div>
+
+      <button type="submit">Calcular</button>
+    </form>
+
+    <div class="theme-buttons">
+  <div class="theme-box green" onclick="setTheme('theme-green')" title="Tema Verde"></div>
+  <div class="theme-box blue" onclick="setTheme('theme-blue')" title="Tema Azul"></div>
+  <div class="theme-box red" onclick="setTheme('theme-red')" title="Tema Vermelho"></div>
+</div>
+
+
+    <!-- RESULTADO AO LADO -->
+    <div id="resultado" class="resultado"></div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
