@@ -14,7 +14,8 @@ Aplicação web que calcula a quantidade diária de calorias e macronutrientes (
 ---
 
 ## 📸 Screenshots
-![RED](screenshots/red-theme.png)
+![RED](assets/red_theme.png)
+![GREEN](assets/blue_theme.png).
 
 
 
